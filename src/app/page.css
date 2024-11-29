@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: teal;
+  padding: 2% 4%;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  gap: 16px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin-bottom: 1vh;
+}
+
+.search_Box > input {
+  padding: 4% 10%;
+  border-radius: 5px;
+  border: none;
+}
+
+.searchBtn {
+  margin-left: 25px;
+}
+
+.searchBtn > button {
+  padding: 7px 24px;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.hotel-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hotel-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.hotel-card h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hotel-card p {
+  margin: 10px 0;
+}
+
+.hotel-image {
+  margin-top: 10px;
+}
+
+.hotel-thumbnail {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  background-color: #f0f0f0;
+}
+
+.pagination button.active {
+  background-color: #00bcd4;
+  color: white;
+}
