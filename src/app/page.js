@@ -32,19 +32,19 @@ export default function Home() {
     <div>
       <div className="container">
         <div>
-          <h1>Hotel Search</h1>
+          <h1>Real Estate Scraper</h1>
         </div>
         <div className="search_Box">
           <input
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Enter a City or Destination"
+            placeholder="Enter MagicBricks Listing URL"
           />
         </div>
         <div className="searchBtn">
           <button onClick={searchHotels} disabled={loading}>
-            {loading ? "Searching..." : "Search"}
+            {loading ? "Scrape..." : "Scrape"}
           </button>
         </div>
       </div>
@@ -57,7 +57,7 @@ export default function Home() {
                 <h2>{hotel.title}</h2>
                 <p>{hotel.snippet}</p>
                 <a href={hotel.link} target="_blank" rel="noopener noreferrer">
-                  View Hotel
+                  View
                 </a>
                 {hotel.thumbnail && (
                   <div className="hotel-image">
